@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
-const siteTitle = process.env.SITE_TITLE2 || 'Inflix Movies - Local Environment';
+const siteTitle = process.env.SITE_TITLE || 'Inflix Movies - Local Environment';
 
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, 'public')));
